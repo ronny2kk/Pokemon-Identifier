@@ -1,2 +1,3 @@
 # Pokemon-Identifier
-This project builds a deep-learning pipeline to tell genuine Pokémon cards from counterfeits by training a convolutional neural network on labeled card images. 
+An experimental pipeline was built to classify genuine Pokémon cards versus counterfeits using convolutional neural networks. A labeled image dataset was augmented with random flips, rotations, zooms, and contrast adjustments to improve generalization. Transfer learning with a frozen pretrained MobileNetV2 network was used to train a lightweight classification head on these augmented images. The resulting model reached roughly **89 % training accuracy** and **81.1 % validation accuracy** with a final validation loss of about **0.48**, confirming its ability to distinguish real cards from fakes.
+ 
